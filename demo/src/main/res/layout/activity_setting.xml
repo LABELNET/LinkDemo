@@ -10,12 +10,55 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                style="@style/Item.ThreeRow">
+                style="@style/Item.ThreeRow"
+                android:gravity="center_vertical">
 
                 <ImageView
+                    android:id="@+id/iv_user_header"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src=""/>
+                    android:layout_margin="5dp"
+                    android:src="@drawable/default_image"
+                    android:background="@drawable/border_yes_round"/>
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/default_user_name"
+                    android:layout_toRightOf="@+id/iv_user_header"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/iv_user_header"
+                    android:layout_below="@+id/tv_user_name">
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/border_no_round"
+                        android:textColor="@android:color/white"
+                        android:textSize="10sp"
+                        android:text="@string/setting_user_id"/>
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/default_user_id"
+                        android:textColor="@android:color/black"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="8sp"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+
+
 
             </RelativeLayout>
 
