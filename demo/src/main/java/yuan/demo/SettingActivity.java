@@ -47,6 +47,16 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+        //账户与安全
+        binding.settingUserSafety.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //TODO 手机号　参数
+                Intent intent=new Intent(SettingActivity.this,SafetyActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 

@@ -32,7 +32,15 @@
     <string name="update_ifo_default">请输入修改内容</string>
 
 
-
+    <!--　账户与安全界面 -->
+    <string name="safety_title">账户与安全</string>
+    <string name="safety_phone">手机号</string>
+    <string name="safety_login_password">登陆密码</string>
+    <string name="safety_pay_setting">支付设置</string>
+    <string name="safety_lock_gesture">锁屏手势</string>
+    <string name="safety_lock_no_open">未开启</string>
+    <string name="safety_secret_backup">密钥备份</string>
+    <string name="safety_default_phone">18610022520</string>
 
 
 </resources>

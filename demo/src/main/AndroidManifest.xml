@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".RqcodeActivity" />
         <activity android:name=".UserIfoActivity" />
-        <activity android:name=".UpdateIfoActivity"></activity>
+        <activity android:name=".UpdateIfoActivity" />
+        <activity android:name=".SafetyActivity"></activity>
     </application>
 
 </manifest>
