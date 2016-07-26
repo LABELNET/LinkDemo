@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RqcodeActivity"></activity>
+        <activity android:name=".RqcodeActivity" />
+        <activity android:name=".UserIfoActivity"></activity>
     </application>
 
 </manifest>
