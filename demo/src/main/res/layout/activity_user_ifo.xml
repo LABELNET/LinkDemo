@@ -21,7 +21,8 @@
             android:id="@+id/rl_user_header"
             style="@style/Item.ThreeRow"
             android:layout_marginTop="20dp"
-            android:clickable="true">
+            android:clickable="true"
+            android:background="@drawable/back_selector_gray">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -60,7 +61,8 @@
         <RelativeLayout
             android:id="@+id/rl_user_nick"
             style="@style/Item.SingleRow"
-            android:clickable="true">
+            android:clickable="true"
+            android:background="@drawable/back_selector_gray">
 
             <TextView
                 android:layout_centerInParent="true"
@@ -100,7 +102,8 @@
         <RelativeLayout
             android:id="@+id/rl_user_id"
             style="@style/Item.SingleRow"
-            android:clickable="true">
+            android:clickable="true"
+            android:background="@drawable/back_selector_gray">
 
             <TextView
                 android:layout_centerInParent="true"
@@ -133,5 +136,6 @@
 
 
     </LinearLayout>
+
 
 </layout>
