@@ -10,7 +10,10 @@
             android:orientation="vertical">
 
             <RelativeLayout
-                style="@style/Item.ThreeRow">
+                style="@style/Item.ThreeRow"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true"
+                >
 
                 <ImageView
                     android:id="@+id/iv_user_header"
@@ -32,7 +35,7 @@
                         android:id="@+id/tv_user_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
+                        android:textSize="18sp"
                         android:layout_marginLeft="5dp"
                         android:textColor="@android:color/black"
                         android:text="@string/default_user_name"
@@ -89,7 +92,9 @@
 
             <RelativeLayout
                 style="@style/Item.SingleRow"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true">
 
                 <TextView
                     android:layout_centerInParent="true"
@@ -98,7 +103,7 @@
                     android:text="@string/setting_user_safety"
                     android:textColor="@android:color/black"
                     android:layout_alignParentLeft="true"
-                    android:textSize="12sp"/>
+                    android:textSize="15sp"/>
 
                 <ImageView
                     android:layout_width="10dp"
@@ -115,7 +120,9 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
-                style="@style/Item.SingleRow">
+                style="@style/Item.SingleRow"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true">
 
                 <TextView
                     android:layout_centerInParent="true"
@@ -124,7 +131,7 @@
                     android:text="@string/setting_secret"
                     android:textColor="@android:color/black"
                     android:layout_alignParentLeft="true"
-                    android:textSize="12sp"/>
+                    android:textSize="15sp"/>
 
                 <ImageView
                     android:layout_width="10dp"
@@ -141,7 +148,9 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
-                style="@style/Item.SingleRow">
+                style="@style/Item.SingleRow"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true">
 
                 <TextView
                     android:layout_centerInParent="true"
@@ -150,7 +159,7 @@
                     android:text="@string/setting_general"
                     android:textColor="@android:color/black"
                     android:layout_alignParentLeft="true"
-                    android:textSize="12sp"/>
+                    android:textSize="15sp"/>
 
                 <ImageView
                     android:layout_width="10dp"
@@ -163,7 +172,9 @@
 
             <RelativeLayout
                 style="@style/Item.SingleRow"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true">
 
                 <TextView
                     android:layout_centerInParent="true"
@@ -172,7 +183,7 @@
                     android:text="@string/setting_help"
                     android:textColor="@android:color/black"
                     android:layout_alignParentLeft="true"
-                    android:textSize="12sp"/>
+                    android:textSize="15sp"/>
 
                 <ImageView
                     android:layout_width="10dp"
@@ -189,7 +200,9 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
-                style="@style/Item.SingleRow">
+                style="@style/Item.SingleRow"
+                android:background="@drawable/back_selector_gray"
+                android:clickable="true">
 
                 <TextView
                     android:layout_centerInParent="true"
@@ -198,7 +211,7 @@
                     android:text="@string/setting_about"
                     android:textColor="@android:color/black"
                     android:layout_alignParentLeft="true"
-                    android:textSize="12sp"/>
+                    android:textSize="15sp"/>
 
                 <ImageView
                     android:layout_width="10dp"
@@ -211,7 +224,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_item_single_row"
-                android:background="@color/alpha_text_c"
+                android:background="@drawable/back_selector_black"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="@dimen/activity_horizontal_margin"
                 android:layout_marginRight="@dimen/activity_horizontal_margin"
