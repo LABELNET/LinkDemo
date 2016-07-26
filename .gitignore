@@ -1,0 +1,21 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gradle
+.idea
+build
+LinkDemo.iml
+local.properties
+gradle
+demo/demo.iml
+demo/app.iml
+将删除 .gradle/
+将删除 .idea/.name
+将删除 .idea/workspace.xml
+将删除 build.gradle
+将删除 build/
+将删除 demo/
+将删除 gradle.properties
+将删除 gradle/
+将删除 gradlew
+将删除 gradlew.bat
+将删除 local.properties
+将删除 settings.gradle
