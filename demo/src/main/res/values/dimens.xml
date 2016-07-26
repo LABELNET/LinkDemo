@@ -2,4 +2,14 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--单行列表项高度 height_item_single_row 126px-->
+    <!--双行列表项高度 height_item_double_row 180px-->
+    <!--三行列表项高度 height_item_three_row 240px-->
+    <dimen name="height_item_single_row">42dp</dimen>
+    <dimen name="height_item_double_row">60dp</dimen>
+    <dimen name="height_item_three_row">80dp</dimen>
+    <dimen name="height_item_single_row_short">37dp</dimen>
+    <dimen name="height_item_single_row_mini_short">27dp</dimen>
+
 </resources>

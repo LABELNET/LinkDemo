@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#354058</color>
+    <color name="colorPrimaryDark">#455068</color>
+    <color name="colorAccent">#455068</color>
+
+    <!--common-->
+    <color name="line">#f0f0f6</color>
+    <color name="white">#ffffff</color>
+    <color name="tip_text_color">#acb4bf</color>
+    <color name="search_contact_color">#bbbbbb</color>
+    <color name="avatar_color_1">#a7b5c1</color>
+    <color name="avatar_color_2">#fcd779</color>
+    <color name="avatar_color_3">#e78e79</color>
+    <color name="avatar_color_4">#89bcd4</color>
+    <color name="avatar_color_5">#82c7b7</color>
+    <color name="avatar_color_6">#75ce7f</color>
+    <color name="text_no_select_bg">#444550</color>
+    <color name="text_select_bg">#007aff</color>
+    <color name="search_edit_bg">#e9ecf3</color>
+    <color name="alpha_text_c">#161A21</color>
+
 </resources>

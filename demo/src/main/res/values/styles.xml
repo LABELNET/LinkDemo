@@ -8,4 +8,50 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+    <!-- ======================= -->
+    <!--         ##列表项样式      -->
+    <!-- ======================= -->
+    <!--* 单行列表项  Item.SingleRow  单行列表项高度  背景白色-->
+    <!--* 双行列表项  Item.DoubleRow 双行列表项高度  背景白色-->
+    <!--* 三行列表项  Item.ThreeRow   三行列表项高度  背景白色-->
+    <style name="Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Item.SingleRow" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_single_row</item>
+        <item name="android:height">@dimen/height_item_single_row</item>
+    </style>
+    <style name="Item.DoubleRow" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_double_row</item>
+        <item name="android:height">@dimen/height_item_double_row</item>
+    </style>
+    <style name="Item.ThreeRow" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_three_row</item>
+        <item name="android:height">@dimen/height_item_three_row</item>
+    </style>
+    <style name="Item.SingleRow.Short" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_single_row_short</item>
+        <item name="android:height">@dimen/height_item_single_row_short</item>
+
+    </style>
+    <style name="Item.SingleRow.Mini" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_single_row_mini_short</item>
+        <item name="android:height">@dimen/height_item_single_row_mini_short</item>
+    </style>
+
+    <style name="Item.SingleRow.Short.Transparent" parent="Item">
+        <item name="android:layout_height">@dimen/height_item_single_row_short</item>
+        <item name="android:height">@dimen/height_item_single_row_short</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+
+
 </resources>
