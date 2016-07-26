@@ -10,5 +10,7 @@ LinkMe设置页面单独实现
              enabled = true
          }
          
-  (2)        
+  (2)配置styles.xml　列表样式主题
+  (3)配置dimens.xml  列表高度
+  
 
