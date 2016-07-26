@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".RqcodeActivity" />
-        <activity android:name=".UserIfoActivity"></activity>
+        <activity android:name=".UserIfoActivity" />
+        <activity android:name=".UpdateIfoActivity"></activity>
     </application>
 
 </manifest>
