@@ -29,6 +29,9 @@
     <!-- 修改昵称界面-->
     <string name="update_ifo_title">修改昵称</string>
     <string name="update_ifo_save">保存</string>
+    <string name="update_ifo_default">请输入修改内容</string>
+
+
 
 
 
