@@ -19,6 +19,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/setting_user_ifo"
                 style="@style/Item.ThreeRow"
                 android:background="@drawable/back_selector_gray"
                 android:clickable="true"
@@ -101,6 +102,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/setting_user_safety"
                 style="@style/Item.SingleRow"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/back_selector_gray"
@@ -130,6 +132,7 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
+                android:id="@+id/setting_secret"
                 style="@style/Item.SingleRow"
                 android:background="@drawable/back_selector_gray"
                 android:clickable="true">
@@ -158,6 +161,7 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
+                android:id="@+id/setting_general"
                 style="@style/Item.SingleRow"
                 android:background="@drawable/back_selector_gray"
                 android:clickable="true">
@@ -181,6 +185,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/setting_help"
                 style="@style/Item.SingleRow"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/back_selector_gray"
@@ -210,6 +215,7 @@
                 android:background="@color/line"/>
 
             <RelativeLayout
+                android:id="@+id/setting_about"
                 style="@style/Item.SingleRow"
                 android:background="@drawable/back_selector_gray"
                 android:clickable="true">
@@ -232,6 +238,7 @@
             </RelativeLayout>
 
             <Button
+                android:id="@+id/setting_user_out"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_item_single_row"
                 android:background="@drawable/back_selector_black"
