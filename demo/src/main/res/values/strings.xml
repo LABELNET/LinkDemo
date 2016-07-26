@@ -13,10 +13,23 @@
     <string name="setting_user_out">退出</string>
     <string name="setting_user_id">ID</string>
 
+    <!-- 二维码界面 -->
+    <string name="rqcode_title">我的二维码</string>
+    <string name="rqcode_sao">扫码</string>
+
     <!-- 个人资料界面-->
     <string name="user_user_header">头像</string>
     <string name="user_user_nick">昵称</string>
     <string name="user_user_id">ID</string>
+    <string name="user_user_title">个人资料</string>
+
+    <!-- 头像预览界面 -->
+    <string name="user_header_title">头像</string>
+
+    <!-- 修改昵称界面-->
+    <string name="update_ifo_title">修改昵称</string>
+    <string name="update_ifo_save">保存</string>
+
 
 
 </resources>
