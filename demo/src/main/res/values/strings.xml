@@ -6,12 +6,17 @@
     <string name="default_user_name">绝命毒师</string>
     <string name="default_user_id">16kMdHAuBkszZSCN3QZGWaLLkwzkXfczQK</string>
     <string name="setting_user_safety">账户与安全</string>
-    　　
     <string name="setting_secret">隐私</string>
     <string name="setting_general">通用</string>
     <string name="setting_help">帮助与支持</string>
     <string name="setting_about">关于</string>
     <string name="setting_user_out">退出</string>
     <string name="setting_user_id">ID</string>
+
+    <!-- 个人资料界面-->
+    <string name="user_user_header">头像</string>
+    <string name="user_user_nick">昵称</string>
+    <string name="user_user_id">ID</string>
+
 
 </resources>
