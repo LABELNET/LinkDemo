@@ -1,5 +1,7 @@
 package yuan.demo.fragment;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import yuan.demo.R;
+import yuan.demo.SafetyPhoneActivity;
 import yuan.demo.databinding.FragmentSafetyPhoneBindBinding;
 
 /**
@@ -18,6 +21,8 @@ import yuan.demo.databinding.FragmentSafetyPhoneBindBinding;
 public class SafetyPhoneBindFragment extends Fragment{
 
     FragmentSafetyPhoneBindBinding bindBinding;
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,11 +33,49 @@ public class SafetyPhoneBindFragment extends Fragment{
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        initView();
+    }
+
+
+    private void initView() {
+      bindBinding.btnSafetyPhone.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              showDialog();
+          }
+      });
+    }
+
+
+    private void showDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setMessage(R.string.safety_phone_unbind);
+        builder.setNegativeButton(R.string.safety_phone_cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+              dialogInterface.cancel();
+            }
+        });
+        builder.setPositiveButton(R.string.safety_phone_sure, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                SafetyPhoneActivity safePhoneActivity= (SafetyPhoneActivity) getActivity();
+                safePhoneActivity.switchContent(SafetyPhoneBindFragment.this,SafetyPhoneUpdateFragment.getInstance());
+            }
+        });
+       builder.create().show();
     }
 
 
     public static Fragment getInstance(){
         return new SafetyPhoneBindFragment();
+    }
+
+
+    private static class DialogClick implements DialogInterface.OnClickListener{
+        @Override
+        public void onClick(DialogInterface dialogInterface, int i) {
+        }
     }
 
 }

@@ -23,4 +23,9 @@ public class SafetyPhoneUpdateFragment extends Fragment{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
     }
+
+    public static Fragment getInstance(){
+        return new SafetyPhoneUpdateFragment();
+    }
+
 }
