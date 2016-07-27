@@ -50,5 +50,8 @@ public class SafetyPasswordActivity extends AppCompatActivity {
 
     }
 
-
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
