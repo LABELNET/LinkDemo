@@ -15,6 +15,7 @@ import yuan.demo.databinding.ActivityUpdateIfoBinding;
 public class UpdateIfoActivity extends AppCompatActivity {
 
     ActivityUpdateIfoBinding binding;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
