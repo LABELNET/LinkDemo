@@ -21,7 +21,8 @@
         <activity android:name=".SafetyActivity" />
         <activity android:name=".SafetyPhoneActivity" />
         <activity android:name=".SafetyPasswordActivity" />
-        <activity android:name=".SafetyPaySettingActivity"></activity>
+        <activity android:name=".SafetyPaySettingActivity" />
+        <activity android:name=".SafetyPayForwardActivity"></activity>
     </application>
 
 </manifest>

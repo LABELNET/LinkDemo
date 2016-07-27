@@ -54,6 +54,8 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
                 showDialog();
                 break;
             case R.id.safety_pay_setting:
+                intent=new Intent(SafetyActivity.this,SafetyPaySettingActivity.class);
+                startActivity(intent);
                 break;
             case R.id.safety_lock_gesture:
                 break;

@@ -71,7 +71,7 @@
     <string name="update_ifo_pass_tip">密码提示</string>
     <string name="update_ifo_pass_tip_default">a****6</string>
     <string name="update_ifo_pass_validate">验证您的登录密码</string>
-    
+
     <!--　支付设置页面　-->
     <string name="pay_setting_title">支付设置</string>
     <string name="pay_setting_pay_password">交易密码</string>

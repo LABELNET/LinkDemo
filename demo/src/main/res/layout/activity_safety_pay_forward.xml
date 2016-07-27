@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yuan.demo.SafetyPayForwardActivity">
+
+    <EditText
+        android:id="@+id/et_update_ifo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/border_round_white"
+        android:layout_marginTop="@dimen/height_item_single_row"
+        android:hint="@string/pay_setting_forward_pay_default"
+        android:inputType="number"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/pay_setting_forward_desc"
+        android:layout_below="@+id/et_update_ifo"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/pay_setting_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_single_row"
+        android:background="@drawable/back_selector_black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"
+        android:text="@string/save"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
