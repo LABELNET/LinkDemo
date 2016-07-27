@@ -2,6 +2,9 @@
     <string name="app_name">Demo</string>
 
 
+    <!--　通用　-->
+    <string name="save">保存</string>
+
     <!-- 个人设置界面 -->
     <string name="default_user_name">绝命毒师</string>
     <string name="default_user_id">16kMdHAuBkszZSCN3QZGWaLLkwzkXfczQK</string>
@@ -68,5 +71,20 @@
     <string name="update_ifo_pass_tip">密码提示</string>
     <string name="update_ifo_pass_tip_default">a****6</string>
     <string name="update_ifo_pass_validate">验证您的登录密码</string>
+    
+    <!--　支付设置页面　-->
+    <string name="pay_setting_title">支付设置</string>
+    <string name="pay_setting_pay_password">交易密码</string>
+    <string name="pay_setting_pay_password_next">重置密码</string>
+    <string name="pay_setting_pay_fingerprint">指纹支付</string>
+    <string name="pay_setting_pay_free_password">免密支付</string>
+    <string name="pay_setting_forward_pay">转账手续费</string>
+    <string name="pay_setting_forward_pay_default">￥0.01</string>
+    <string name="pay_setting_pay_password_edit">请设置你的支付密码</string>
+    <string name="pay_setting_pay_six_num">请输入6位数字</string>
+    <string name="pay_setting_pay_password_edit_twice">请再输入一次</string>
+    <string name="pay_setting_forward_title">转账手续费</string>
+    <string name="pay_setting_forward_desc">转账手续费由比特币网络收取\n手续费越高交易确认速度越快</string>
+
 
 </resources>
