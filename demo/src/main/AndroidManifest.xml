@@ -19,7 +19,8 @@
         <activity android:name=".UserIfoActivity" />
         <activity android:name=".UpdateIfoActivity" />
         <activity android:name=".SafetyActivity" />
-        <activity android:name=".SafetyPhoneActivity"></activity>
+        <activity android:name=".SafetyPhoneActivity" />
+        <activity android:name=".SafetyPasswordActivity"></activity>
     </application>
 
 </manifest>
