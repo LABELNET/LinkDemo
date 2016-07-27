@@ -14,6 +14,7 @@ import yuan.demo.databinding.ActivitySafetyBinding;
 public class SafetyActivity extends AppCompatActivity implements View.OnClickListener{
 
     ActivitySafetyBinding binding;
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,10 +43,13 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
         switch (view.getId()){
             case R.id.safety_phone:
                 //修改手机号
-                Intent intent=new Intent(SafetyActivity.this,SafetyPhoneActivity.class);
+                intent=new Intent(SafetyActivity.this,SafetyPhoneActivity.class);
                 startActivity(intent);
                 break;
             case R.id.safety_login_password:
+                intent=new Intent(SafetyActivity.this,UpdateIfoActivity.class);
+                intent.putExtra(SettingConstant.UPDATE_IFO_ACTIVITY_KEY,SettingConstant.UPDATE_LOGIN_PASSWORD);
+                startActivity(intent);
                 break;
             case R.id.safety_pay_setting:
                 break;

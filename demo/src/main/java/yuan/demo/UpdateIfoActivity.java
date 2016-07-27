@@ -15,17 +15,26 @@ import yuan.demo.databinding.ActivityUpdateIfoBinding;
 public class UpdateIfoActivity extends AppCompatActivity {
 
     ActivityUpdateIfoBinding binding;
-    
+    private int type=SettingConstant.UPDATE_USER_NICK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_update_ifo);
+        type=getIntent().getIntExtra(SettingConstant.UPDATE_IFO_ACTIVITY_KEY,SettingConstant.UPDATE_USER_NICK);
+        switch (type){
+            case SettingConstant.UPDATE_USER_NICK:
+                //初始化修改昵称的界面
+                break;
+            case SettingConstant.UPDATE_LOGIN_PASSWORD:
+                //初始化修改密码的界面
+                break;
+        }
+
         initView();
     }
 
     private void initView() {
-
           binding.etUpdateIfo.addTextChangedListener(new TextWatcher() {
               @Override
               public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
@@ -112,4 +121,8 @@ public class UpdateIfoActivity extends AppCompatActivity {
         Toast.makeText(this,"保存",Toast.LENGTH_LONG).show();
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }

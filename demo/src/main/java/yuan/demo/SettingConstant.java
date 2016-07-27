@@ -6,8 +6,10 @@ package yuan.demo;
  */
 public interface SettingConstant {
 
-    String UPDATE_USER_NICK="update_user_nick";
+    String UPDATE_IFO_ACTIVITY_KEY="update_type";
 
-    String UPDATE_LOGIN_PASSWORD="update_login_password";
+    int UPDATE_USER_NICK=1001;
+
+    int UPDATE_LOGIN_PASSWORD=1002;
 
 }

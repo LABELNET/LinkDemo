@@ -26,10 +26,16 @@
     <!-- 头像预览界面 -->
     <string name="user_header_title">头像</string>
 
-    <!-- 修改昵称界面-->
+    <!-- 修改信息界面-->
     <string name="update_ifo_title">修改昵称</string>
     <string name="update_ifo_save">保存</string>
     <string name="update_ifo_default">请输入修改内容</string>
+    <string name="update_ifo_pass_title">修改登录密码</string>
+    <string name="update_ifo_pass_desc">您的私钥将使用新密码重新加密</string>
+    <string name="update_ifo_pass_edit">请输入新密码</string>
+    <string name="update_ifo_pass_tip">密码提示</string>
+    <string name="update_ifo_pass_tip_default">a****6</string>
+
 
 
     <!--　账户与安全界面 -->
