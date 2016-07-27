@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="phone"
+            type="String"/>
+
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/setting_phone3x"
+            android:layout_marginTop="@dimen/height_item_double_row"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/safety_phone_yours"
+            android:layout_marginTop="@dimen/height_item_double_row"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/safety_default_phone"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/height_item_single_row_mini_short"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_single_row"
+            android:text="@string/safety_phone_bind"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/back_selector_green"/>
+
+    </LinearLayout>
+</layout>

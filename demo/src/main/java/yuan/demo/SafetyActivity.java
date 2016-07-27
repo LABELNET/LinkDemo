@@ -24,7 +24,11 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void initView() {
-
+        binding.safetyPhone.setOnClickListener(this);
+        binding.safetyLoginPassword.setOnClickListener(this);
+        binding.safetyPaySetting.setOnClickListener(this);
+        binding.safetyLockGesture.setOnClickListener(this);
+        binding.safetySecretBackup.setOnClickListener(this);
     }
 
 
