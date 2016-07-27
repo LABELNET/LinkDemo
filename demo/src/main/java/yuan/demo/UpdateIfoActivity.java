@@ -15,22 +15,11 @@ import yuan.demo.databinding.ActivityUpdateIfoBinding;
 public class UpdateIfoActivity extends AppCompatActivity {
 
     ActivityUpdateIfoBinding binding;
-    private int type=SettingConstant.UPDATE_USER_NICK;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding= DataBindingUtil.setContentView(this,R.layout.activity_update_ifo);
-        type=getIntent().getIntExtra(SettingConstant.UPDATE_IFO_ACTIVITY_KEY,SettingConstant.UPDATE_USER_NICK);
-        switch (type){
-            case SettingConstant.UPDATE_USER_NICK:
-                //初始化修改昵称的界面
-                break;
-            case SettingConstant.UPDATE_LOGIN_PASSWORD:
-                //初始化修改密码的界面
-                break;
-        }
-
         initView();
     }
 

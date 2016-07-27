@@ -33,7 +33,6 @@ public class UserIfoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //TODO 昵称信息 参数
                 Intent intent=new Intent(UserIfoActivity.this,UpdateIfoActivity.class);
-                intent.putExtra(SettingConstant.UPDATE_IFO_ACTIVITY_KEY,SettingConstant.UPDATE_USER_NICK);
                 startActivity(intent);
             }
         });

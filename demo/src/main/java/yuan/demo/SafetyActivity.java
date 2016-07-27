@@ -48,7 +48,6 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
                 break;
             case R.id.safety_login_password:
                 intent=new Intent(SafetyActivity.this,UpdateIfoActivity.class);
-                intent.putExtra(SettingConstant.UPDATE_IFO_ACTIVITY_KEY,SettingConstant.UPDATE_LOGIN_PASSWORD);
                 startActivity(intent);
                 break;
             case R.id.safety_pay_setting:
