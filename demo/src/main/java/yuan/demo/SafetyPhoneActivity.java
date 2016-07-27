@@ -13,6 +13,15 @@ public class SafetyPhoneActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
     Fragment mContent;
 
+    private String phoneNumber;
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

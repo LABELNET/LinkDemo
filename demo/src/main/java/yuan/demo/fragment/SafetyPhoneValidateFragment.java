@@ -16,17 +16,20 @@ import yuan.demo.databinding.FragmentSafetyPhoneBindBinding;
  */
 public class SafetyPhoneValidateFragment extends Fragment{
 
-    FragmentSafetyPhoneBindBinding bindBinding;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        bindBinding=FragmentSafetyPhoneBindBinding.bind(inflater.inflate(R.layout.fragment_safety_phone_bind,container));
-        return bindBinding.getRoot();
+        return inflater.inflate(R.layout.fragment_safety_phone_vaildate,container,false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
     }
+
+    public static Fragment getInstance(){
+        return new SafetyPhoneValidateFragment();
+    }
+
 }
