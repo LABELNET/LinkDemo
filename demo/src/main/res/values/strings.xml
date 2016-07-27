@@ -42,5 +42,22 @@
     <string name="safety_secret_backup">密钥备份</string>
     <string name="safety_default_phone">18610022520</string>
 
+    <!-- 账户与安全　：　手机号相关 -->
+    <string name="safety_phone_title">绑定手机号</string>
+    <string name="safety_phone_yours">您的手机号</string>
+    <string name="safety_phone_bind">绑定新的手机号</string>
+    <string name="safety_phone_unbind">解除绑定</string>
+    <string name="safety_phone_cancel">取消</string>
+    <string name="safety_phone_update_title">修改手机</string>
+    <string name="safety_phone_update_phone">更改手机号</string>
+    <string name="safety_phone_update_edit">请输入新的手机号</string>
+    <string name="safety_phone_update_desc">更换手机号后下一次请用新号码登录\n一个手机号只能绑定一个账户</string>
+    <string name="safety_phone_update_default">+86</string>
+    <string name="safety_phone_update_validate">验证号码</string>
+    <string name="safety_phone_update_send_msg">验证码已经发送到你的手机</string>
+    <string name="safety_phone_update_msg">手机号码已更新</string>
+    <string name="safety_phone_new_unbind">未绑定手机</string>
+    <string name="safety_phone_update_next">下一步</string>
+
 
 </resources>
