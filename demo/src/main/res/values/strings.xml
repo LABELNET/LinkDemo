@@ -60,6 +60,7 @@
     <string name="safety_phone_new_unbind">未绑定手机</string>
     <string name="safety_phone_update_next">下一步</string>
     <string name="safety_phone_name_hint">电话号码</string>
+    <string name="safety_phone_validate_name">验证码</string>
 
 
 </resources>

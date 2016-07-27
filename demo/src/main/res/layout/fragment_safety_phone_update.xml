@@ -43,7 +43,8 @@
             android:textColor="@android:color/black"
             android:background="@color/white"
             android:textColorHint="@color/search_contact_color"
-            android:padding="5dp"/>
+            android:padding="5dp"
+            android:inputType="phone" />
     </LinearLayout>
 
     <TextView

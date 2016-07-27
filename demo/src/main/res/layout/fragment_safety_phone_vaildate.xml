@@ -1,14 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
+    <data>
+        <variable
+            name="phone"
+            type="String"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/app_name"
-        android:textSize="@dimen/height_item_three_row"/>
+        android:gravity="center_horizontal">
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/safety_validate_num"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_item_single_row"
+            android:hint="@string/safety_phone_validate_name"
+            android:textColorHint="@android:color/black"
+            android:layout_marginTop="@dimen/height_item_double_row"
+            android:textColor="@android:color/black"
+            android:maxLength="4"
+            android:lines="1"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:background="@android:color/transparent"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="@string/safety_phone_update_send_msg"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/height_item_three_row"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/avatar_color_6"
+            android:layout_marginTop="5dp"
+            android:text='@{phone}'/>
+
+        <Button
+            android:id="@+id/btn_safety_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_single_row"
+            android:text="@string/safety_phone_update_next"
+            android:textColor="@color/white"
+            android:background="@drawable/back_selector_green"
+            android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+
+
+
+    </LinearLayout>
+</layout>
