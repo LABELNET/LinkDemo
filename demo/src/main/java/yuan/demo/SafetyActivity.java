@@ -1,5 +1,6 @@
 package yuan.demo;
 
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,6 +38,8 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
         switch (view.getId()){
             case R.id.safety_phone:
                 //修改手机号
+                Intent intent=new Intent(SafetyActivity.this,SafetyPhoneActivity.class);
+                startActivity(intent);
                 break;
             case R.id.safety_login_password:
                 break;
