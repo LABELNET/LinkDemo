@@ -47,7 +47,7 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.safety_login_password:
-                intent=new Intent(SafetyActivity.this,UpdateIfoActivity.class);
+                intent=new Intent(SafetyActivity.this,SafetyPasswordActivity.class);
                 startActivity(intent);
                 break;
             case R.id.safety_pay_setting:
