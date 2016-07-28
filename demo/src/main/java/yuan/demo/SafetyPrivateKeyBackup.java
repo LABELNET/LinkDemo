@@ -39,4 +39,9 @@ public class SafetyPrivateKeyBackup extends AppCompatActivity {
     private void show(String msg){
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
