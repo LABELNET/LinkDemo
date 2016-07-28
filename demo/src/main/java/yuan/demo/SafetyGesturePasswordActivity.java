@@ -35,7 +35,7 @@ public class SafetyGesturePasswordActivity extends AppCompatActivity {
             public void toggleToOn() {
                 //TODO 没有手势密码-参数key　打开锁屏绘制
                 binding.gestureOpen.setState(true);
-                intent.putExtra(SettingConstant.SAFETY_GESTURE_KEY, SettingConstant.SAFETY_GESTURE_KEY);
+                intent.putExtra(SettingConstant.SAFETY_GESTURE_KEY, SettingConstant.SAFETY_GESTURE_VALIDATE);
                 startActivity(intent);
             }
 

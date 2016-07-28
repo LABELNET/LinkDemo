@@ -4,6 +4,9 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.eftimoff.patternview.PatternView;
 import com.eftimoff.patternview.cells.Cell;
@@ -46,6 +49,9 @@ public class SafetyGestureDrawActivity extends AppCompatActivity {
      * 初始化验证界面
      */
     private void initValiDateView() {
+        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) binding.gestureDrawMsg.getLayoutParams();
+        params.setMargins(0,60,0,0);
+        binding.gestureDrawMsg.setLayoutParams(params);
         binding.gestureDrawMsg.setText(R.string.gesture_validate_desc);
         binding.gestureDrawPatternViewMini.setVisibility(View.GONE);
         binding.gestureDrawValidate.setVisibility(View.VISIBLE);
@@ -74,6 +80,7 @@ public class SafetyGestureDrawActivity extends AppCompatActivity {
      * 初始化绘制界面
      */
     private void initDrawView() {
+        binding.gestureDrawPatternView.clearPattern();
         binding.gestureDrawMsg.setText(R.string.gesture_draw_desc);
         binding.gestureDrawPatternViewMini.setVisibility(View.VISIBLE);
         binding.gestureDrawValidate.setVisibility(View.GONE);
@@ -98,9 +105,13 @@ public class SafetyGestureDrawActivity extends AppCompatActivity {
         binding.gestureDrawPatternView.setOnPatternDetectedListener(new PatternView.OnPatternDetectedListener() {
             @Override
             public void onPatternDetected() {
+
                 if(cells.equals(binding.gestureDrawPatternView.getPattern())){
-                    binding.gestureDrawMsg.setText("正确");
+                    Toast.makeText(SafetyGestureDrawActivity.this,"二次输入正确",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(SafetyGestureDrawActivity.this,"二次输入失败",Toast.LENGTH_SHORT).show();
                 }
+
             }
         });
     }
