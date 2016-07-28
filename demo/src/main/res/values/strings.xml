@@ -86,5 +86,17 @@
     <string name="pay_setting_forward_title">转账手续费</string>
     <string name="pay_setting_forward_desc">转账手续费由比特币网络收取\n手续费越高交易确认速度越快</string>
 
+    <!-- 手势密码 -->
+    <string name="gesture_password_title">手势密码</string>
+    <string name="gesture_password_update">修改手势密码</string>
+    <string name="gesture_password_desc">手势密码可以防止非法用户访问沙盒中的私钥\n开启后每次进入APP都需要输入</string>
+    <string name="gesture_draw_title">绘制手势密码</string>
+    <string name="gesture_draw_desc">请绘制手势密码</string>
+    <string name="gesture_draw_desc_next">请再输入一次</string>
+    <string name="gesture_validate_title">验证原密码</string>
+    <string name="gesture_validate_desc">请输入原手势密码</string>
+    <string name="gesture_validate_login">使用登录密码验证</string>
+
+
 
 </resources>

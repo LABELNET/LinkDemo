@@ -22,7 +22,8 @@
         <activity android:name=".SafetyPhoneActivity" />
         <activity android:name=".SafetyPasswordActivity" />
         <activity android:name=".SafetyPaySettingActivity" />
-        <activity android:name=".SafetyPayForwardActivity"></activity>
+        <activity android:name=".SafetyPayForwardActivity" />
+        <activity android:name=".SafetyGesturePasswordActivity"></activity>
     </application>
 
 </manifest>
