@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="yuan.demo.SafetyPrivateKeyBackup">
+
+    <ImageView
+        android:id="@+id/iv_private_key_code"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/default_rqcode_image"
+        android:layout_marginTop="@dimen/height_item_single_row"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/height_item_double_row"
+        android:text="@string/private_key_backup_desc"/>
+
+
+</LinearLayout>

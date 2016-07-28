@@ -4,6 +4,7 @@
 
     <!--　通用　-->
     <string name="save">保存</string>
+    <string name="cancel">取消</string>
 
     <!-- 个人设置界面 -->
     <string name="default_user_name">绝命毒师</string>
@@ -96,6 +97,12 @@
     <string name="gesture_validate_title">验证原密码</string>
     <string name="gesture_validate_desc">请输入原手势密码</string>
     <string name="gesture_validate_login">使用登录密码验证</string>
+
+    <!--私钥备份导出-->
+    <string name="private_key_backup_title">私钥备份导出</string>
+    <string name="private_key_backup_desc">此二维码是通过登录密码加密后的主地址私钥\n您可以备份在相册或者电子邮箱\n或是通过其他手机扫描登录\n系统会自动导入您其他的子地址私钥</string>
+    <string name="private_key_save_mob">保存到手机相册</string>
+    <string name="private_key_send_mail">发送到电子邮箱</string>
 
 
 </resources>

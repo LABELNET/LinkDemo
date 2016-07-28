@@ -24,7 +24,8 @@
         <activity android:name=".SafetyPaySettingActivity" />
         <activity android:name=".SafetyPayForwardActivity" />
         <activity android:name=".SafetyGesturePasswordActivity" />
-        <activity android:name=".SafetyGestureDrawActivity"></activity>
+        <activity android:name=".SafetyGestureDrawActivity" />
+        <activity android:name=".SafetyPrivateKeyBackup"></activity>
     </application>
 
 </manifest>
