@@ -27,7 +27,8 @@
         <activity android:name=".SafetyGestureDrawActivity" />
         <activity android:name=".SafetyPrivateKeyBackup" />
         <activity android:name=".PrivacyActivity" />
-        <activity android:name=".GeneralActivity"></activity>
+        <activity android:name=".GeneralActivity" />
+        <activity android:name=".AboutActivity"></activity>
     </application>
 
 </manifest>
