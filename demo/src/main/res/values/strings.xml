@@ -103,7 +103,7 @@
     <string name="private_key_backup_desc">此二维码是通过登录密码加密后的主地址私钥\n您可以备份在相册或者电子邮箱\n或是通过其他手机扫描登录\n系统会自动导入您其他的子地址私钥</string>
     <string name="private_key_save_mob">保存到手机相册</string>
     <string name="private_key_send_mail">发送到电子邮箱</string>
-    
+
     <!--隐私-->
     <string name="privacy_title">隐藏</string>
     <string name="privacy_add_validate">加我为好友需要验证</string>
@@ -114,7 +114,7 @@
     <string name="privacy_setting_search_me">通过手机号搜到我</string>
     <string name="privacy_setting_address_me">通过比特币地址搜到我</string>
     <string name="privacy_setting_black_name">黑名单</string>
-    
+
     <!--通用-->
     <string name="general_title">通用</string>
     <string name="general_more_language">多语言</string>
@@ -123,6 +123,7 @@
     <string name="general_msg_notify_close">未开启</string>
     <string name="general_setting_voice">声音</string>
     <string name="general_setting_shock">震动</string>
+    <string name="general_setting_notify_desc">如果想要关闭消息通知，请到你的手机设置中进行更改</string>
     <string name="general_clear_chat_record">清空聊天记录</string>
 
     <!--帮助与支持-->
@@ -136,7 +137,7 @@
         <item>我可以创建多少个群组</item>
         <item>我把他加入黑名单了　如何恢复</item>
     </array>
-    
+
     <!--关于-->
     <string name="about_title">关于</string>
     <string name="about_version_code">版本号 V1.0</string>
