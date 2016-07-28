@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_save_mob"
+        android:title="@string/private_key_save_mob"
+        android:orderInCategory="100"></item>
+
+    <item
+        android:id="@+id/menu_send_mail"
+        android:title="@string/private_key_send_mail"
+        android:orderInCategory="100"></item>
+
+</menu>
