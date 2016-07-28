@@ -127,7 +127,8 @@
             android:text="@string/general_clear_chat_record"
             android:gravity="center"
             android:textColor="@color/black"
-            android:background="@color/white"/>
+            android:clickable="true"
+            android:background="@drawable/back_selector_gray"/>
 
     </LinearLayout>
 </layout>

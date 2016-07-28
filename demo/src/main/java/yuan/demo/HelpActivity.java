@@ -1,5 +1,6 @@
 package yuan.demo;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -35,6 +36,7 @@ public class HelpActivity extends AppCompatActivity {
             items.add(item);
         }
         HelpListAdapter adapter=new HelpListAdapter(items);
+        adapter.setContext(this);
         helpList.setAdapter(adapter);
     }
 
@@ -44,6 +46,11 @@ public class HelpActivity extends AppCompatActivity {
     private static class HelpListAdapter extends BaseAdapter {
 
         private List<Item> items=new ArrayList<>();
+        private Context context;
+
+        public void setContext(Context context) {
+            this.context = context;
+        }
 
         public HelpListAdapter(List<Item> items) {
             this.items = items;
@@ -68,7 +75,7 @@ public class HelpActivity extends AppCompatActivity {
         public View getView(int i, View view, ViewGroup viewGroup) {
             TextView tvItemText;
             if(view==null){
-                view= LayoutInflater.from(view.getContext()).inflate(R.layout.item_help_activity,viewGroup,false);
+                view= LayoutInflater.from(context).inflate(R.layout.item_help_activity,viewGroup,false);
                 tvItemText= (TextView) view.findViewById(R.id.tv_name);
                 view.setTag(tvItemText);
             }else{
@@ -106,5 +113,8 @@ public class HelpActivity extends AppCompatActivity {
         }
     }
 
-
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }

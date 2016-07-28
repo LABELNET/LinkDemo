@@ -57,7 +57,42 @@ public class SettingActivity extends AppCompatActivity {
             }
         });
 
+        //隐私
+        binding.settingSecret.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SettingActivity.this,PrivacyActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        //通用
+        binding.settingGeneral.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SettingActivity.this,GeneralActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //帮助
+        binding.settingHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SettingActivity.this,HelpActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //关于
+        binding.settingAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SettingActivity.this,AboutActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

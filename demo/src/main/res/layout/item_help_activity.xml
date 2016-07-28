@@ -7,7 +7,6 @@
     <RelativeLayout
         style="@style/Item.SingleRow"
         android:clickable="true"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:background="@drawable/back_selector_gray">
 
         <TextView

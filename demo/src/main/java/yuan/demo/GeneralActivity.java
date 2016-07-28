@@ -29,4 +29,9 @@ public class GeneralActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
