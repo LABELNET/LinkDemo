@@ -62,6 +62,8 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.safety_secret_backup:
+                intent=new Intent(SafetyActivity.this,SafetyPrivateKeyBackup.class);
+                startActivity(intent);
                 break;
         }
     }
