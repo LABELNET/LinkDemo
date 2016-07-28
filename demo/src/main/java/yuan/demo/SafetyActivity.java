@@ -58,6 +58,8 @@ public class SafetyActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(intent);
                 break;
             case R.id.safety_lock_gesture:
+                intent=new Intent(SafetyActivity.this,SafetyGesturePasswordActivity.class);
+                startActivity(intent);
                 break;
             case R.id.safety_secret_backup:
                 break;
