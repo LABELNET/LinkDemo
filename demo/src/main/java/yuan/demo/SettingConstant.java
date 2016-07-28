@@ -6,10 +6,10 @@ package yuan.demo;
  */
 public interface SettingConstant {
 
-    String UPDATE_IFO_ACTIVITY_KEY="update_type";
+    // 验证手势和绘制手势
+    String SAFETY_GESTURE_KEY="safety_gesture_key";
+    int SAFETY_GESTURE_VALIDATE=1010;
+    int SAFETY_GESTURE_DRAW=1011;
 
-    int UPDATE_USER_NICK=1001;
-
-    int UPDATE_LOGIN_PASSWORD=1002;
 
 }
