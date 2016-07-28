@@ -7,6 +7,7 @@
     <!--common-->
     <color name="line">#f0f0f6</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
     <color name="tip_text_color">#acb4bf</color>
     <color name="search_contact_color">#bbbbbb</color>
     <color name="avatar_color_1">#a7b5c1</color>
