@@ -1,10 +1,12 @@
 package yuan.demo;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -72,8 +74,26 @@ public class SafetyGestureDrawActivity extends AppCompatActivity {
     }
 
     //验证本地密码
-    private void showDialog() {
-        initDrawView();
+    private void showDialog(){
+        final View view = getLayoutInflater().inflate(R.layout.dialog_alert_edit_pass, null);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setNegativeButton(R.string.safety_phone_cancel, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        builder.setPositiveButton(R.string.safety_phone_sure, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                final EditText etPass= (EditText) view.findViewById(R.id.et_dialog_pass);
+                //TODO 与本地密码进行匹配
+
+                //TODO 正确后调用改方法
+                initDrawView();
+            }
+        }).setView(view);
+        builder.create().show();
     }
 
     /**
