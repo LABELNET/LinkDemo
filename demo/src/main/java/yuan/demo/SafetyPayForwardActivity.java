@@ -10,4 +10,9 @@ public class SafetyPayForwardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_safety_pay_forward);
     }
+
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
 }
