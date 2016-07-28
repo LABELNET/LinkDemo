@@ -28,7 +28,8 @@
         <activity android:name=".SafetyPrivateKeyBackup" />
         <activity android:name=".PrivacyActivity" />
         <activity android:name=".GeneralActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".HelpActivity"></activity>
     </application>
 
 </manifest>
